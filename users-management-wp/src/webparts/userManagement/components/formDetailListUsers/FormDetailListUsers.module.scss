@@ -1,0 +1,33 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+@import '~office-ui-fabric-react/dist/sass/_References.scss';
+.app-field-wrap{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    .app-field-label{
+      width: 100px;
+      max-width: 100px;
+    }
+    .app-field-control{
+      flex-grow: 1;
+      display: flex;
+      gap: 10px;
+      :global{
+        .ms-Dropdown{
+          flex-grow: 1;
+          width: 500px;
+          max-width: 500px;
+        }
+        .ms-TextField{
+          flex-grow: 1;
+          width: 500px;
+          max-width: 500px;
+        }
+        .ms-Button{
+          flex-grow: 1;
+          width: 120px;
+          max-width: 120px;
+        }
+      }
+    }
+}

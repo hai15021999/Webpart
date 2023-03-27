@@ -1,0 +1,34 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+@import '~office-ui-fabric-react/dist/sass/_References.scss';
+.app-dialog-wrap {
+     :global {
+        .ms-Dialog-title {
+            font-weight: 700;
+        }
+        div[class^="topButton"] {
+            padding-top: 20px;
+        }
+    }
+    .app-dialog-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .app-field-wrap {
+            display: flex;
+            .app-field-label {
+                min-width: 121px;
+                .app-text-bold {
+                    font-weight: bold;
+                }
+            }
+            .app-field-control {
+                flex-grow: 1;
+            }
+        }
+    }
+}
+:global{
+    .ms-Dialog-main{
+        min-width: 500px;
+    }
+}
